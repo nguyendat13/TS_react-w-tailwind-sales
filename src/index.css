@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.user{
+    position: relative;
+    left: 670px;
+    bottom:19px;
+}
+.cart{
+    z-index: 1px;
+    position: relative;
+    left: 690px;
+    bottom:19px;
+}

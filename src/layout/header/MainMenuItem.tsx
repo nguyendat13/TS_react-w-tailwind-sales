@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import MenuService from "../services/MenuService";
+import MenuService from "../../services/MenuService";
 
 const MainMenuItem = (props) => {
   const menu = props.menu;
@@ -15,7 +15,7 @@ const MainMenuItem = (props) => {
     return (
       <li className="nav-item dropdown ps-2">
         <Link
-          className="nav-link dropdown-toggle"
+          className="nav-link dropdown-toggle "
           to={menu.link}
           role="button"
           data-bs-toggle="dropdown"
@@ -24,11 +24,11 @@ const MainMenuItem = (props) => {
           {menu.name}
         </Link>
 
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu text-center bg-gray-400 text-orange-50 text-xl hover:*:text-amber-400 ">
           {menus.map((menusub, index) => {
             return (
               <li key={index}>
-                <Link className="dropdown-item" to={menusub.link}>
+                <Link className=" " to={menusub.link}>
                   {menusub.name}
                 </Link>
               </li>
@@ -40,7 +40,7 @@ const MainMenuItem = (props) => {
   } else {
     return (
       <>
-        <li className="nav-item ps-2">
+        <li className="nav-item ">
           <Link className="nav-link" to={menu.link}>
             {menu.name}
           </Link>
